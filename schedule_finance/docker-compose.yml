@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    environment:
+    - MYSQL_USER=impo4420_adm_schedule_finance
+    - MYSQL_PASSWORD=0[9$7_;(iR8l@a;l
+    - MYSQL_DATABASE=db_schedule_finance
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_HOST=br328.hostgator.com.br
+    volumes:
+      - "./conf.d:/etc/mysql/conf.d:ro"
