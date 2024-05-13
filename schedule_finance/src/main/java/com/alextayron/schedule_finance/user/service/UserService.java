@@ -1,4 +1,4 @@
-package com.alextayron.schedule_finance.service;
+package com.alextayron.schedule_finance.user.service;
 
 import java.time.Instant;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.alextayron.schedule_finance.controller.CreateUserDto;
-import com.alextayron.schedule_finance.controller.UpdateUserDto;
-import com.alextayron.schedule_finance.entity.User;
-import com.alextayron.schedule_finance.repository.UserRepository;
+import com.alextayron.schedule_finance.user.repository.UserRepository;
+import com.alextayron.schedule_finance.user.controller.CreateUserDto;
+import com.alextayron.schedule_finance.user.controller.UpdateUserDto;
+import com.alextayron.schedule_finance.user.entity.User;;
 
 @Service
 public class UserService {

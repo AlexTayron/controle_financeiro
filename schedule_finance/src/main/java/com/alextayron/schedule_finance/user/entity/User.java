@@ -1,4 +1,4 @@
-package com.alextayron.schedule_finance.entity;
+package com.alextayron.schedule_finance.user.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

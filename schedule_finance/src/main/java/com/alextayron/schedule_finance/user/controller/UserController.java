@@ -1,4 +1,4 @@
-package com.alextayron.schedule_finance.controller;
+package com.alextayron.schedule_finance.user.controller;
 
 import java.net.URI;
 
@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alextayron.schedule_finance.entity.User;
-import com.alextayron.schedule_finance.service.UserService;
+import com.alextayron.schedule_finance.user.entity.User;
+import com.alextayron.schedule_finance.user.service.UserService;
+
 import java.util.List;
 import org.springframework.web.bind.annotation.PutMapping;
  
