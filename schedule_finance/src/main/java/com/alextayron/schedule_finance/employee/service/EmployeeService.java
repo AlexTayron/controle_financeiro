@@ -25,6 +25,7 @@ public class EmployeeService {
         var entity = new Employee(
                 UUID.randomUUID(),
                 createEmployeeDto.name(),
+                createEmployeeDto.function(),
                 createEmployeeDto.email(),
                 createEmployeeDto.phone(),
                 createEmployeeDto.password(),
@@ -55,6 +56,9 @@ public class EmployeeService {
 
             if (updateEmployeeDto.name() != null) {
                 employee.setEmployeename(updateEmployeeDto.name());
+            }
+            if (updateEmployeeDto.employeeFunction() != null) {
+                employee.setEmployeefunction(updateEmployeeDto.employeeFunction());
             }
             if (updateEmployeeDto.phone() != null) {
                 employee.setPhone(updateEmployeeDto.phone());

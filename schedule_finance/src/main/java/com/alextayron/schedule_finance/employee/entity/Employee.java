@@ -23,6 +23,9 @@ public class Employee {
     @Column(name = "employeename")
     private String employeename;
 
+    @Column(name = "employeefunction")
+    private String employeefunction;
+
     @Column(name = "email")
     private String email;
 
@@ -41,10 +44,11 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(UUID employeeId, String employeename, String email, String phone, String password, Instant creationTimestamp,
+    public Employee(UUID employeeId, String employeename, String employeefunction, String email, String phone, String password, Instant creationTimestamp,
             Instant updateTimestamp) {
         this.employeeId = employeeId;
         this.employeename = employeename;
+        this.employeefunction = employeefunction;
         this.email = email;
         this.phone = phone;
         this.password = password;
@@ -66,6 +70,14 @@ public class Employee {
 
     public void setEmployeename(String employeename) {
         this.employeename = employeename;
+    }
+
+    public String getEmployeefunction() {
+        return employeefunction;
+    }
+
+    public void setEmployeefunction(String employeefunction) {
+        this.employeefunction = employeefunction;
     }
 
     public String getEmail() {
